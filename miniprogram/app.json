@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/photos/photos",
+    "pages/blogs/blogs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "wangwenzhi",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#5756c0",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/icons/home.png",
+        "selectedIconPath": "/assets/icons/home_active.png"
+      },
+      {
+        "pagePath": "pages/photos/photos",
+        "text": "相片",
+        "iconPath": "/assets/icons/classify.png",
+        "selectedIconPath": "/assets/icons/classify_active.png"
+      },
+      {
+        "pagePath": "pages/blogs/blogs",
+        "text": "博客",
+        "iconPath": "/assets/icons/center.png",
+        "selectedIconPath": "/assets/icons/center_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

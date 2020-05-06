@@ -1,0 +1,48 @@
+<view>
+    <image class="center_bg" mode='aspectFill' src='/assets/images/my_bg.jpg'></image>
+    <view class="avatar-warp">
+        <image class="avatar" mode='aspectFill' src='cloud://kahen-g3b4q.6b61-kahen-g3b4q-1301352816/head/head.jpg'></image>
+        <view class="nickname">李家幸</view>
+        <view class="user-info">
+            <image src='../../assets/icons/level.png'></image>
+            171543319
+        </view>
+        <view class="article-info">
+            <view class="article-item">
+                <text class="num">22</text>
+                年龄
+            </view>
+            <view class="article-item">
+                <text class="num">男</text>
+                性别
+            </view>
+            <view class="article-item">
+                <text class="num">清远</text>
+                城市
+            </view>
+        </view>
+    </view>
+    <view class="menu-warp" bind:tap="copytoCliboard">
+        <navigator>
+            <image class="icon" src='../../assets/icons/github.png'></image>
+            获取Github主页
+            <image class="next" src='../../assets/icons/next.png'></image>
+        </navigator></view>
+    <view class="menu-warp">
+        <navigator url='/pages/page/article?key=about'>
+            <image class="icon" src='../../assets/icons/school.png'></image>
+            广东金融学院
+            <image class="next" src='../../assets/icons/next.png'></image>
+        </navigator>
+    </view>
+    <view class="menu-warp">
+        <navigator url='/pages/page/article?key=introduce'>
+            <image class="icon" src='../../assets/icons/developer.png'></image>
+            关于开发者
+            <image class="next" src='../../assets/icons/next.png'></image>
+        </navigator>
+    </view>
+    <button type="default" bindtap="calling" hover-class="button-hover" style='width:80%;margin-bottom:20px; background-color:#fc0'>
+        电话联系我
+    </button>
+</view>
