@@ -2,7 +2,7 @@
   "pages": [
     "pages/home/home",
     "pages/photos/photos",
-    "pages/blogs/blogs"
+    "pages/resume/resume"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,8 +28,8 @@
         "selectedIconPath": "/assets/icons/classify_active.png"
       },
       {
-        "pagePath": "pages/blogs/blogs",
-        "text": "博客",
+        "pagePath": "pages/resume/resume",
+        "text": "简历",
         "iconPath": "/assets/icons/center.png",
         "selectedIconPath": "/assets/icons/center_active.png"
       }

@@ -29,19 +29,13 @@
             <image class="next" src='../../assets/icons/next.png'></image>
         </navigator></view>
     <view class="menu-warp">
-        <navigator url='/pages/page/article?key=about'>
+        <navigator url='/pages/article/article?id=1'>
             <image class="icon" src='../../assets/icons/school.png'></image>
             广东金融学院
             <image class="next" src='../../assets/icons/next.png'></image>
         </navigator>
     </view>
-    <view class="menu-warp">
-        <navigator url='/pages/page/article?key=introduce'>
-            <image class="icon" src='../../assets/icons/developer.png'></image>
-            关于开发者
-            <image class="next" src='../../assets/icons/next.png'></image>
-        </navigator>
-    </view>
+    
     <button type="default" bindtap="calling" hover-class="button-hover" style='width:80%;margin-bottom:20px; background-color:#fc0'>
         电话联系我
     </button>

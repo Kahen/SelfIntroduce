@@ -1,0 +1,15 @@
+/* pages/resume/resume.wxss */
+.title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color:#518de7;
+    line-height: 24px;
+    margin: 10px 10px 10px 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+.infor{
+    font-size: 15px;
+    line-height: 24px;
+}

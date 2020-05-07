@@ -1,0 +1,9 @@
+<!--pages/resume/resume.wxml-->
+<view>
+  <view  wx:for="{{resume}}" wx:key="item">
+  <text class="title">{{item.title}}</text>
+  <view class="infor" wx:for="{{item.infor}}" wx:key="item">
+  <text>{{item}}</text>
+  </view>
+  </view>
+</view>

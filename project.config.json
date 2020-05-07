@@ -2,12 +2,25 @@
 	"miniprogramRoot": "miniprogram/",
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
+		"enhance": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"enhance": true
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true
 	},
 	"appid": "wx34a1e0e8a9126937",
 	"projectname": "SelfIntroduce",
@@ -30,10 +43,26 @@
 		"game": {
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 0,
 			"list": [
-				{}
+				{
+					"id": -1,
+					"name": "pages/photos/photos",
+					"pathName": "pages/photos/photos",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/resume/resume",
+					"pathName": "pages/resume/resume",
+					"scene": null
+				}
 			]
 		}
 	}

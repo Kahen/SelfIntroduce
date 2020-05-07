@@ -2,7 +2,7 @@
 <loading></loading>
 
 <swiper class="home-warp" circular="true" duration='300' next-margin="40rpx" previous-margin="40rpx">
-  <block wx:for="{{swiper}}" wx:key="{{item.id}}"> 
+  <block wx:for="{{swiper}}" wx:key="item"> 
     <swiper-item class="home-item">
         <navigator class="article-warp"  url='../article/article?id={{item.articleid}}'>
             <image class="main-img" mode='aspectFill' src='{{item.src}}' ></image>

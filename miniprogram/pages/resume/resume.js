@@ -1,45 +1,37 @@
-const db = wx.cloud.database()
+const db=wx.cloud.database()
+// pages/resume/resume.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    actionSheetHidden: true, // 是都隐藏登录浮窗  
-    articleDetail: undefined // 文章详情
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  async onLoad (options) {
-    console.log("options",options)
-    let that = this
-    db.collection("swiper").get(
-      {
-        success: function (res) {
-          console.log("success", res)
-          that.setData({
-            swiper: res.data,
-            id:options.id-1
-          })
-          //动态显示标题
-          wx.setNavigationBarTitle({
-            title: res.data[options.id-1].title
-          })
-        },
-        fail: function (res) {
-          console.log("fail", res)
-        }
+  onLoad: function (options) {
+    let that =this
+    db.collection("resume").get({
+      success:function(res){
+        console.log("res",res)
+        that.setData({
+          resume:res.data
+        })
+      },
+      fail: function (res) {
+        console.log("res", res)
       }
-    )
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
@@ -53,27 +45,34 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
   }
 })
