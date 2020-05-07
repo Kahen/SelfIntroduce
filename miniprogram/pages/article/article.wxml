@@ -1,0 +1,13 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="article-cover">
+  <image mode='aspectFill' src="{{ swiper.src }}"></image>
+  <view class="title-warp">
+    <text class="classify">{{ swiper.tag }}</text>
+    <text class="title">{{ swiper.title }}</text>
+  </view>
+</view>
+<view class="article-warp">
+  <view class="article-content">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+</view>

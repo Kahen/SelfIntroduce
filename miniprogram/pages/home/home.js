@@ -1,3 +1,4 @@
+const db=wx.cloud.database()
 Page({
 
   
@@ -12,8 +13,21 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  
+  onLoad: function () {
+    let that=this
+    db.collection("avatar").get(
+      {
+        success:function(res){
+          console.log("success",res)
+          that.setData({
+            avatar:res.data
+          })
+        },
+        fail:function(res){
+          console.log("fail",res)
+        }
+      }
+    )
   },
 
   /**

@@ -1,18 +1,31 @@
-// pages/photos/photos.js
+const db=wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    articleList: undefined, // 推荐的文章
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  async onLoad(options) {
+    let that = this
+    db.collection("swiper").get(
+      {
+        success: function (res) {
+          console.log("success", res)
+          that.setData({
+            swiper: res.data
+          })
+        },
+        fail: function (res) {
+          console.log("fail", res)
+        }
+      }
+    )
   },
 
   /**
@@ -25,8 +38,8 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
+  async onShow() {
+   
   },
 
   /**

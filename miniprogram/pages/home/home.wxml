@@ -1,7 +1,7 @@
 <view>
     <image class="center_bg" mode='aspectFill' src='/assets/images/my_bg.jpg'></image>
     <view class="avatar-warp">
-        <image class="avatar" mode='aspectFill' src='cloud://kahen-g3b4q.6b61-kahen-g3b4q-1301352816/head/head.jpg'></image>
+        <image class="avatar" mode='aspectFill' src="{{avatar[0].src}}"></image>
         <view class="nickname">李家幸</view>
         <view class="user-info">
             <image src='../../assets/icons/level.png'></image>
