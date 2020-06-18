@@ -2,10 +2,10 @@
     <image class="center_bg" mode='aspectFill' src='/assets/images/my_bg.jpg'></image>
     <view class="avatar-warp">
         <image class="avatar" mode='aspectFill' src="{{avatar[0].src}}"></image>
-        <view class="nickname">李家幸</view>
+        <view class="nickname">李老板</view>
         <view class="user-info">
             <image src='../../assets/icons/level.png'></image>
-            171543319
+            171XXXXXX
         </view>
         <view class="article-info">
             <view class="article-item">
@@ -17,7 +17,7 @@
                 性别
             </view>
             <view class="article-item">
-                <text class="num">清远</text>
+                <text class="num">地球</text>
                 城市
             </view>
         </view>
